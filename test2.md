@@ -13,6 +13,10 @@ services: []
 show_news: true
 partners: []
 show_staff: false
+menu:
+  navigation:
+    weight: 7
+    title: ''
 
 ---
 sfsdafsa
