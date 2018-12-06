@@ -13,7 +13,6 @@ services: []
 show_news: true
 partners: []
 show_staff: false
-published: false
 
 ---
 sfsdafsa
