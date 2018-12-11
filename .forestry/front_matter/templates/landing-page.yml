@@ -74,6 +74,10 @@ fields:
   name: show_staff
   label: Show Staff?
   description: Enables a staff section that lists each person in the People collection
+- type: boolean
+  name: beer
+  label: Beer
+  description: Test
 - name: layout
   label: Layout
   type: text
