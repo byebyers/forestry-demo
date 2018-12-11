@@ -14,22 +14,15 @@
                     <div class="pure-u-1 pure-u-md-1-4">
                         <div class="post">
                             <div class="post-header">
-                            {% if person.thumbnail %}
+                            {% if beer.thumbnail %}
                                 <img alt="{{ beer.title }}" src="{{ beer.thumbnail | absolute_url }}">
                             {% else %}
                                 <img alt="{{ beer.title }}" src="{{ "/img/placeholder.png" | absolute_url }}>
                             {% endif %}
                             </div>
                             <div class="post-body">
-                                <h3>
-                                    <a href="{{ person.url | absolute_url }}">{{ person.title }}</a>
-                                </h3>
-                                {% if person.sub_heading %}
-                                <div class="subtitle">
-                                    {{ person.sub_heading }}
-                                </div>{% endif %}
                                 <p>
-                                    {{ person.content | truncatewords: 25, "...<br><br>Continue reading →" }}
+                                    {{ beer.content | truncatewords: 25, "...<br><br>Continue reading →" }}
                                 </p>
                             </div>
                         </div>
