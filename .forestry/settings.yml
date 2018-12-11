@@ -2,13 +2,13 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Content
 - type: directory
   path: _beer
-  label: Beer
+  label: Beers
   create: all
   match: "/*"
   templates:
@@ -31,8 +31,6 @@ sections:
   match: "*"
   templates:
   - person
-  - '{"path"=>"_beer", "type"=>"directory", "label"=>"Beer", "match"=>"*", "create"=>"all",
-    "templates"=>["beer"]}'
 - type: directory
   path: _projects
   label: Projects
