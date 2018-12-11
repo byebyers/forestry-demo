@@ -21,6 +21,9 @@
                             {% endif %}
                             </div>
                             <div class="post-body">
+                                <h3>
+                                    <a href="{{ beer.url | absolute_url }}">{{ beer.title }}</a>
+                                </h3>
                                 <p>
                                     {{ beer.content | truncatewords: 25, "...<br><br>Continue reading →" }}
                                 </p>
