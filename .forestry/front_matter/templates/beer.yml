@@ -10,6 +10,9 @@ fields:
   name: thumbnail
   label: Thumbnail
   description: " Square image, Max 500 pixels "
+- type: file
+  name: banner_image
+  label: Hero Image
 - type: text
   name: layout
   label: Layout
