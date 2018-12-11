@@ -2,8 +2,15 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url:
+webhook_url: 
 sections:
+- type: directory
+  path: _beer
+  label: Beer
+  create: all
+  match: "**/*"
+  templates:
+  - beer
 - type: heading
   label: Content
 - type: jekyll-posts
@@ -24,13 +31,8 @@ sections:
   match: "*"
   templates:
   - person
-  - type: directory
-    path: _beer
-    label: Beer
-    create: all
-    match: "*"
-    templates:
-    - beer
+  - '{"path"=>"_beer", "type"=>"directory", "label"=>"Beer", "match"=>"*", "create"=>"all",
+    "templates"=>["beer"]}'
 - type: directory
   path: _projects
   label: Projects
