@@ -38,6 +38,10 @@
 					<div class="profile-photo">
 					<img src="{{ page.thumbnail | absolute_url }}" alt="{{ page.title }}">
 					</div>
+				{% else if page.collection == 'beer' and page.thumbnail and page.thumbnail != "" %}
+					<div class="profile-photo">
+					<img src="{{ page.thumbnail | absolute_url }}" alt="{{ page.title }}">
+					</div>
 				{% endif %}
 					<h2>{{ page.title }}</h2>
 					{% if page.sub_heading and page.sub_heading != "" %}
