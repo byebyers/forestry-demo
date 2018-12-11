@@ -23,7 +23,7 @@ collections:
   projects:
     output: true
     permalink: "/projects/:path/"
-  beer:
+  beers:
     output: true
     permalink: "/about/:path/"
 # tag_page_layout: tag_page
