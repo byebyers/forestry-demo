@@ -12,8 +12,7 @@ fields:
   description: " Square image, Max 500 pixels "
 - type: text
   name: beer
-  label: beer
-  default: beer
+  label: Layout
   hidden: true
 pages:
 - _beer/beer-lover-s-delight-4hrs-tangy.md
