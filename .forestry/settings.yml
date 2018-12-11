@@ -4,15 +4,15 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: _beer
   label: Beer
   create: all
-  match: "**/*"
+  match: "/*"
   templates:
   - beer
-- type: heading
-  label: Content
 - type: jekyll-posts
   label: Posts
   create: all
