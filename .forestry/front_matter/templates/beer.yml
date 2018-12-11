@@ -18,3 +18,5 @@ fields:
   label: beer
   default: beer
   hidden: true
+pages:
+- _beer/beer-lover-s-delight-4hrs-tangy.md
