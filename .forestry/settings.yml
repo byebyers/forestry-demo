@@ -10,7 +10,7 @@ sections:
   path: _beer
   label: Beers
   create: all
-  match: "/*"
+  match: "*"
   templates:
   - beer
 - type: jekyll-posts
